@@ -1,0 +1,98 @@
+/**
+ *  SETTINGS
+ */
+
+$enable-grid-classes: true !default; // generate grid classes
+$enable-reset-defaults: true !default; // reset default browser values
+
+// colors
+$c-white: #fff !default;
+$c-black: #000 !default;
+$c-success: #4caf50 !default;
+$c-info: #5bc0de !default;
+$c-warning: #f0ad4e !default;
+$c-error: #e74c3c !default;
+$c-gray: #969da6 !default;
+$c-gray-light: #eceff1 !default;
+
+$c-primary: #03a9f4 !default;
+$c-secondary: #e91e63 !default;
+$c-dark: #18232f !default;
+$c-light: $c-gray-light !default;
+
+$c-text: #272727 !default;
+$c-link: $c-primary !default;
+$c-link-hover: rgba($c-primary, 0.8) !default;
+
+$bgc-body: $c-white !default;
+
+$c-map: (
+    "primary": $c-primary,
+    "dark": $c-dark,
+    "secondary": $c-secondary,
+    "white": $c-white,
+    "success": $c-success,
+    "info": $c-info,
+    "warning": $c-warning,
+    "error": $c-error,
+    "gray": $c-gray,
+    "gray-light": $c-gray-light,
+) !default;
+
+// Shadows
+$bxsh-base: 0 0 5px rgba(0, 0, 0, 0.2) !default;
+$bxsh-medium: $bxsh-base !default;
+
+// Typography
+$fw-light: 300 !default;
+$fw-normal: 400 !default;
+$fw-bold: 600 !default;
+$fw-headings: $fw-light !default;
+
+$ff-base: "Lato", sans-serif !default;
+$fw-base: 400 !default;
+$fz-base: 16px !default;
+$lh-base: 1.5em !default;
+
+$fz-huge: 36px !default;
+$fz-big: 24px !default;
+$fz-medium: $fz-base !default;
+$fz-small: 12px !default;
+
+$lh-huge: 1.3em !default;
+$lh-big: 1.3em !default;
+$lh-medium: $lh-base !default;
+$lh-small: 1.3em !default;
+
+// Body
+$c-body: $c-text !default;
+$ff-body: $ff-base !default;
+$fz-body: $fz-base !default;
+$fw-body: $fw-base !default;
+$lh-body: $lh-base !default;
+
+// Border
+$bdc-base: #d5d9db !default;
+$bd-medium: 1px solid $bdc-base !default;
+$bdr-base: 3px !default;
+$bdr-medium: $bdr-base !default;
+$bdr-rounded-corners: 5px !default;
+
+// Defaults (HTML elements)
+$fw-strong: $fw-bold !default;
+$mb-p: 1.5em !default;
+$mb-ul: 1em !default;
+$mb-li: 0.5em !default;
+
+// Margin
+$m-xsmall: 4px !default;
+$m-small: 8px !default;
+$m-medium: 16px !default;
+$m-big: 36px !default;
+$m-huge: 48px !default;
+
+// Padding
+$p-small: 4px !default;
+$p-medium: 8px !default;
+$p-big: 16px !default;
+$p-huge: 36px !default;
