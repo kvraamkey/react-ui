@@ -10,7 +10,7 @@ const App = () => {
     <section className="docs">
       <section className='docs-nav'>
         <div className="docs-nav-header">
-          <span>Components</span>
+          <span>React UI</span>
           <input type="search" placeholder="Search Component" />
         </div>
         <div className="docs-nav-list">
