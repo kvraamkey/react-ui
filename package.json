@@ -1,7 +1,7 @@
 {
   "name": "react-ui",
-  "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "version": "0.0.2",
+  "description": "ui component for react",
   "author": "",
   "license": "MIT",
   "repository": "/react-ui",
