@@ -2,9 +2,17 @@
   "name": "react-ui",
   "version": "0.0.2",
   "description": "ui component for react",
-  "author": "",
+  "author": "Ramki A <kvraamkeydev@gmail.com>",
   "license": "MIT",
-  "repository": "/react-ui",
+  "maintainers": [
+    "Ramki A <kvraamkeydev@gmail.com>"
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:kvraamkey/react-ui.git"
+    }
+  ],
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "components/index.js",
