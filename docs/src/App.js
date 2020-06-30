@@ -1,7 +1,7 @@
 import React from 'react'
 
-import * as library from 'react-ui';
-import 'react-ui/dist/index.css'
+import * as library from '@kvraamkey/react-ui';
+import '@kvraamkey/react-ui/dist/index.css'
 
 const { Button } = library;
 

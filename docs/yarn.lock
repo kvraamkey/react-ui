@@ -1307,6 +1307,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@kvraamkey/react-ui@link:..":
+  version "0.0.0"
+  uid ""
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -8793,10 +8797,6 @@ react-is@^16.8.1, react-is@^16.8.4:
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 "react-scripts@link:../node_modules/react-scripts":
-  version "0.0.0"
-  uid ""
-
-"react-ui@link:..":
   version "0.0.0"
   uid ""
 
