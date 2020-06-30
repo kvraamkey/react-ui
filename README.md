@@ -7,7 +7,11 @@
 ## Install
 
 ```bash
-npm install --save react-ui
+npm install @kvraamkey/react-ui
+```
+
+```bash
+yarn add @kvraamkey/react-ui
 ```
 
 ## Usage
@@ -15,12 +19,12 @@ npm install --save react-ui
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-ui'
-import 'react-ui/dist/index.css'
+import { Button } from '@kvraamkey/react-ui'
+import '@kvraamkey/react-ui/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Button name="sample button" />
   }
 }
 ```
