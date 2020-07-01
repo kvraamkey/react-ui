@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@kvraamkey/react-ui": "link:..",
+    "github-markdown-css": "^4.0.0",
     "marked": "^1.1.0",
+    "normalize.css": "^8.0.1",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts"
