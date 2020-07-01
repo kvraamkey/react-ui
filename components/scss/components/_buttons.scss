@@ -63,6 +63,7 @@ button {
 .#{$DBbutton-namespace}__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   .#{$DBbutton-namespace} {
     margin-right: calculateRem(6px);
     margin-bottom: calculateRem(10px);
