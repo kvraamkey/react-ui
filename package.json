@@ -29,7 +29,9 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd docs && yarn install && yarn run build",
-    "deploy": "gh-pages -d docs/build"
+    "deploy": "gh-pages -d docs/build",
+    "format": "prettier --write \"components/**/*.{js,jsx,css,html,scss}\"",
+    "format:check": "prettier -c \"components/**/*.{js,jsx,css,html,scss}\""
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -47,10 +49,10 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^3.1.0",
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.4",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
