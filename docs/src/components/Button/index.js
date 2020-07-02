@@ -19,17 +19,6 @@ export default () => {
         <Button name='link button' link />
       </Button.List>
       <h4>Outline Buttons</h4>
-      <Button.List>
-        <Button name='Default' className='custome' outline />
-        <Button name='Primary' variant={'primary'} outline />
-        <Button name='Secondary' variant={'secondary'} outline />
-        <Button name='Success' variant={'success'} outline />
-        <Button name='Info' variant={'info'} outline />
-        <Button name='Warning' variant={'warning'} outline />
-        <Button name='Danger' variant={'danger'} outline />
-        <Button name='Dark' variant={'dark'} outline />
-        <Button name='link button' link />
-      </Button.List>
     </Component>
   );
 };
