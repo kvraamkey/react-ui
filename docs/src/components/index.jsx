@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import marked from 'marked';
-import ReactMarkdown from 'react-markdown';
 
 marked.setOptions({
   renderer: new marked.Renderer(),
