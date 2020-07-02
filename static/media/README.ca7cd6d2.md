@@ -1,6 +1,6 @@
 # Button
 
-Button element
+Button is an extension to standard input element with icons.
 
 ## Example
 
