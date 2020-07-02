@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import marked from 'marked';
+import ReactMarkdown from 'react-markdown';
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -14,9 +15,7 @@ marked.setOptions({
 });
 
 const Component = ({ children, readme }) => {
-  console.log(readme);
   const [markdown, setMarkdown] = React.useState('');
-
   React.useEffect(() => {
     fetch(readme)
       .then((response) => response.text())
@@ -27,14 +26,14 @@ const Component = ({ children, readme }) => {
 
   return (
     <>
-      <div className='docs-readme'>
+      <div className='docs-readme animate-opacity'>
         {readme && (
-          <div className='markdown-body'>
+          <div className='markdown-body animate-opacity'>
             <div dangerouslySetInnerHTML={{ __html: markdown }} />
           </div>
         )}
       </div>
-      <div className='docs-example'>
+      <div className='docs-example animate-opacity'>
         <h3 className='docs-example-title'>Example</h3>
         {children}
       </div>
