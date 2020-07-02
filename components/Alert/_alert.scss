@@ -1,0 +1,60 @@
+/**
+ *  Alert
+ *
+ */
+
+// setings
+$Alert-namespace: 'c-alert' !default;
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+@mixin alert-theme($textColor, $bgColor) {
+  background-color: $bgColor;
+  border-color: darken($bgColor, 5deg);
+  color: $textColor;
+}
+.#{$Alert-namespace} {
+  position: relative;
+  padding: calculateRem(12px) calculateRem(14px);
+  margin-bottom: calculateRem(16px);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: calculateRem(15px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include alert-theme($dark-color, $default);
+
+  #{&}__close {
+    cursor: pointer;
+    svg {
+      width: 20px;
+    }
+  }
+
+  &#{&}__primary {
+    @include alert-theme($light-color, $primary);
+  }
+
+  &#{&}__secondary {
+    @include alert-theme($light-color, $secondary);
+  }
+
+  &#{&}__success {
+    @include alert-theme($light-color, $success);
+  }
+
+  &#{&}__warning {
+    @include alert-theme($light-color, $warning);
+  }
+
+  &#{&}__info {
+    @include alert-theme($light-color, $info);
+  }
+
+  &#{&}__danger {
+    @include alert-theme($light-color, $danger);
+  }
+}

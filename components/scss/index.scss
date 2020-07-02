@@ -5,7 +5,9 @@
 
 // Utils
 // @import "utils/breakpoints";
-@import 'utils/reset';
+@import './utils/reset';
+@import './utils/colors';
 
 // Components
-@import 'components/buttons';
+@import './../Alert/alert';
+@import './../Button/buttons';
