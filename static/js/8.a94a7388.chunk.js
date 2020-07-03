@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-ui-example"]=this["webpackJsonpreact-ui-example"]||[]).push([[8],{23:function(e,p,a){e.exports=a.p+"static/media/README.de4bf844.md"}}]);
+//# sourceMappingURL=8.a94a7388.chunk.js.map
