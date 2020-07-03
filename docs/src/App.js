@@ -19,7 +19,6 @@ const App = () => {
   }, []);
 
   async function loadViews(comp) {
-    console.log('comp', comp);
     window.history.replaceState(null, null, `?c=${comp}`);
     const View = await importView(comp);
     setViews(<View />);

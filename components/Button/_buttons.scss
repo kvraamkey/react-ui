@@ -23,105 +23,100 @@ $btn-light: #eceff1;
 $btn-dark-color: #1d1d1d;
 $btn-light-color: #fff;
 
-$DBbutton-namespace: 'c-btn' !default;
+$DBbutton-namespace: "c-btn" !default;
 
 @mixin btn-theme($textColor, $bgColor) {
-  color: $textColor;
-  background: $bgColor;
-  border-color: darken($bgColor, 7%);
+    color: $textColor;
+    background: $bgColor;
+    border-color: darken($bgColor, 7%);
 
-  &:hover:not(:disabled) {
-    @include btn-theme-hover($bgColor);
-  }
+    &:hover:not(:disabled) {
+        @include btn-theme-hover($bgColor);
+    }
 
-  &:active:not(:disabled) {
-    @include btn-theme-hover($bgColor);
-  }
+    &:active:not(:disabled) {
+        @include btn-theme-hover($bgColor);
+    }
 }
 
-@mixin btn-theme-hover($btn-color, $hover-color: '') {
-  @if $hover-color== '' {
-    $hover-color: darken($btn-color, 5%);
-    $hover-color: darken($hover-color, 5%);
-  }
+@mixin btn-theme-hover($btn-color, $hover-color: "") {
+    @if $hover-color== "" {
+        $hover-color: darken($btn-color, 5%);
+        $hover-color: darken($hover-color, 5%);
+    }
 
-  background: $hover-color;
-  // border-color: darken($btn-color, 20%);
-}
-
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return #{$remSize}rem;
+    background: $hover-color;
+    // border-color: darken($btn-color, 20%);
 }
 
 // reset default buttons
 button {
-  border: 0;
-  cursor: pointer;
+    border: 0;
+    cursor: pointer;
 }
 
 .#{$DBbutton-namespace}__list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  .#{$DBbutton-namespace} {
-    margin-right: calculateRem(6px);
-    margin-bottom: calculateRem(10px);
-  }
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .#{$DBbutton-namespace} {
+        margin-right: calculateRem(6px);
+        margin-bottom: calculateRem(10px);
+    }
 }
 
 .#{$DBbutton-namespace} {
-  font-weight: 500;
-  letter-spacing: calculateRem(0.5px);
-  font-size: calculateRem(13px);
-  padding: calculateRem(6px) calculateRem(14px);
-  border-radius: calculateRem(4px);
-  line-height: 1.5;
-  transition: all 0.15s ease-in-out;
-  @include btn-theme($btn-dark-color, $btn-default);
+    font-weight: 500;
+    letter-spacing: calculateRem(0.5px);
+    font-size: calculateRem(13px);
+    padding: calculateRem(6px) calculateRem(14px);
+    border-radius: calculateRem(4px);
+    line-height: 1.5;
+    transition: all 0.15s ease-in-out;
+    @include btn-theme($btn-dark-color, $btn-default);
 
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &[disabled],
-  &#{&}__disabled {
-    opacity: 0.5;
-    cursor: default;
-  }
-
-  &#{&}__primary {
-    @include btn-theme($btn-light-color, $btn-primary);
-  }
-
-  &#{&}__secondary {
-    @include btn-theme($btn-light-color, $btn-secondary);
-  }
-
-  &#{&}__success {
-    @include btn-theme($btn-light-color, $btn-success);
-  }
-
-  &#{&}__warning {
-    @include btn-theme($btn-light-color, $btn-warning);
-  }
-
-  &#{&}__info {
-    @include btn-theme($btn-light-color, $btn-info);
-  }
-
-  &#{&}__danger {
-    @include btn-theme($btn-light-color, $btn-danger);
-  }
-
-  &#{&}__dark {
-    @include btn-theme($btn-light-color, $btn-dark);
-  }
-
-  &#{&}__link {
-    @include btn-theme($btn-dark-color, transparent);
-    &:hover {
-      text-decoration: underline;
+    &:last-child {
+        margin-right: 0;
     }
-  }
+
+    &[disabled],
+    &#{&}__disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+
+    &#{&}__primary {
+        @include btn-theme($btn-light-color, $btn-primary);
+    }
+
+    &#{&}__secondary {
+        @include btn-theme($btn-light-color, $btn-secondary);
+    }
+
+    &#{&}__success {
+        @include btn-theme($btn-light-color, $btn-success);
+    }
+
+    &#{&}__warning {
+        @include btn-theme($btn-light-color, $btn-warning);
+    }
+
+    &#{&}__info {
+        @include btn-theme($btn-light-color, $btn-info);
+    }
+
+    &#{&}__danger {
+        @include btn-theme($btn-light-color, $btn-danger);
+    }
+
+    &#{&}__dark {
+        @include btn-theme($btn-light-color, $btn-dark);
+    }
+
+    &#{&}__link {
+        @include btn-theme($btn-dark-color, transparent);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

@@ -1,13 +1,19 @@
 @charset 'UTF-8';
 
 // Settings
-@import 'settings';
+@import "settings";
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
 
 // Utils
 // @import "utils/breakpoints";
-@import './utils/reset';
-@import './utils/colors';
+@import "./utils/reset";
+@import "./utils/colors";
 
 // Components
-@import './../Alert/alert';
-@import './../Button/buttons';
+@import "./../Alert/alert";
+@import "./../Button/buttons";
+@import "./../Radio/radio";
