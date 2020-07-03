@@ -4,57 +4,57 @@
  */
 
 // setings
-$Alert-namespace: 'c-alert' !default;
+$Alert-namespace: "c-alert" !default;
 
 @function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return #{$remSize}rem;
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
 }
 @mixin alert-theme($textColor, $bgColor) {
-  background-color: $bgColor;
-  border-color: darken($bgColor, 5deg);
-  color: $textColor;
+    background-color: $bgColor;
+    border-color: darken($bgColor, 5deg);
+    color: $textColor;
 }
 .#{$Alert-namespace} {
-  position: relative;
-  padding: calculateRem(12px) calculateRem(14px);
-  margin-bottom: calculateRem(16px);
-  border: 1px solid transparent;
-  border-radius: 3px;
-  font-size: calculateRem(15px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @include alert-theme($dark-text-color, $default);
+    position: relative;
+    padding: calculateRem(12px) calculateRem(14px);
+    margin-bottom: calculateRem(16px);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: calculateRem(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include alert-theme($dark-text-color, $default);
 
-  #{&}__close {
-    cursor: pointer;
-    svg {
-      width: 20px;
+    #{&}__close {
+        cursor: pointer;
+        svg {
+            width: 20px;
+        }
     }
-  }
 
-  &#{&}__primary {
-    @include alert-theme($light-text-color, $primary);
-  }
+    &#{&}__primary {
+        @include alert-theme($light-text-color, $primary);
+    }
 
-  &#{&}__secondary {
-    @include alert-theme($light-text-color, $secondary);
-  }
+    &#{&}__secondary {
+        @include alert-theme($light-text-color, $secondary);
+    }
 
-  &#{&}__success {
-    @include alert-theme($light-text-color, $success);
-  }
+    &#{&}__success {
+        @include alert-theme($light-text-color, $success);
+    }
 
-  &#{&}__warning {
-    @include alert-theme($light-text-color, $warning);
-  }
+    &#{&}__warning {
+        @include alert-theme($light-text-color, $warning);
+    }
 
-  &#{&}__info {
-    @include alert-theme($light-text-color, $info);
-  }
+    &#{&}__info {
+        @include alert-theme($light-text-color, $info);
+    }
 
-  &#{&}__danger {
-    @include alert-theme($light-text-color, $danger);
-  }
+    &#{&}__danger {
+        @include alert-theme($light-text-color, $danger);
+    }
 }
