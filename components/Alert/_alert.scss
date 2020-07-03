@@ -25,7 +25,7 @@ $Alert-namespace: 'c-alert' !default;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @include alert-theme($dark-color, $default);
+  @include alert-theme($dark-text-color, $default);
 
   #{&}__close {
     cursor: pointer;
@@ -35,26 +35,26 @@ $Alert-namespace: 'c-alert' !default;
   }
 
   &#{&}__primary {
-    @include alert-theme($light-color, $primary);
+    @include alert-theme($light-text-color, $primary);
   }
 
   &#{&}__secondary {
-    @include alert-theme($light-color, $secondary);
+    @include alert-theme($light-text-color, $secondary);
   }
 
   &#{&}__success {
-    @include alert-theme($light-color, $success);
+    @include alert-theme($light-text-color, $success);
   }
 
   &#{&}__warning {
-    @include alert-theme($light-color, $warning);
+    @include alert-theme($light-text-color, $warning);
   }
 
   &#{&}__info {
-    @include alert-theme($light-color, $info);
+    @include alert-theme($light-text-color, $info);
   }
 
   &#{&}__danger {
-    @include alert-theme($light-color, $danger);
+    @include alert-theme($light-text-color, $danger);
   }
 }
