@@ -27,16 +27,16 @@ $c-link-hover: rgba($c-primary, 0.8) !default;
 $bgc-body: $c-white !default;
 
 $c-map: (
-  'primary': $c-primary,
-  'dark': $c-dark,
-  'secondary': $c-secondary,
-  'white': $c-white,
-  'success': $c-success,
-  'info': $c-info,
-  'warning': $c-warning,
-  'error': $c-error,
-  'gray': $c-gray,
-  'gray-light': $c-gray-light
+    "primary": $c-primary,
+    "dark": $c-dark,
+    "secondary": $c-secondary,
+    "white": $c-white,
+    "success": $c-success,
+    "info": $c-info,
+    "warning": $c-warning,
+    "error": $c-error,
+    "gray": $c-gray,
+    "gray-light": $c-gray-light
 ) !default;
 
 // Shadows
@@ -49,7 +49,7 @@ $fw-normal: 400 !default;
 $fw-bold: 600 !default;
 $fw-headings: $fw-light !default;
 
-$ff-base: 'Lato', sans-serif !default;
+$ff-base: "Lato", sans-serif !default;
 $fw-base: 400 !default;
 $fz-base: 16px !default;
 $lh-base: 1.5em !default;
