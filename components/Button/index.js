@@ -1,36 +1,41 @@
 import * as React from "react";
-import classNames from "classnames";
+import cx from "classnames";
 
-type ButtonProps = {
-    name: string,
-    as?: string,
-    variant?: string,
-    href?: string,
-    link: boolean,
-    className?: "string"
-};
+// type ButtonProps = {
+//     name: string,
+//     as?: string,
+//     variant?: string,
+//     href?: string,
+//     link: boolean,
+//     className?: "string"
+// };
 
-const Button = (props: ButtonProps) => {
-    const { as: Element, variant: buttonType, link, outline, className, disabled } = props;
-    var btnClass = classNames("c-btn", {
-        [`c-btn__${buttonType}`]: buttonType ? true : false,
-        "c-btn__outline": outline ? true : false,
-        "c-btn__link": link ? true : false
+const Button = (props) => {
+    const { as: Element, variant, rounded, outline, className, disabled, link } = props;
+    var btnClass = cx("w3-button w3-ripple", {
+        [`w3-${variant}`]: variant && !outline ? true : false,
+        "w3-border w3-transparent": outline ? true : false,
+        "w3-hover-none": disabled || link ? true : false,
+        ["underline"]: link ? true : false,
+        "w3-hover-light-grey": outline && variant === "default" ? true : false,
+        [`w3-border-${variant} w3-hover-${variant}`]: outline && variant !== "default" ? true : false,
+        "w3-round": rounded ? true : false
     });
 
     return (
-        <Element className={classNames(btnClass, className)} disabled={disabled}>
+        <Element className={cx(btnClass, className)} disabled={disabled}>
             {props.name}
         </Element>
     );
 };
 
-const ButtonWrapper = (props) => <div className='c-btn__list'>{props.children}</div>;
+const ButtonWrapper = (props) => <div className='w3-bar btn'>{props.children}</div>;
 
 Button.List = ButtonWrapper;
 
 Button.defaultProps = {
     as: "button",
+    variant: "default",
     href: "#"
 };
 
